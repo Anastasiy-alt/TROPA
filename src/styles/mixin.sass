@@ -1,0 +1,43 @@
+@mixin laptop
+  @media (max-width: 1439px)
+    @content
+
+@mixin mobile
+  @media (max-width: 767px)
+    @content
+
+@mixin hover
+  @media (hover: hover) and (pointer: fine)
+    @content
+
+@mixin flexRowWrap
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+@mixin flexRowNoWrap
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+
+@mixin flexColumn
+  display: flex
+  flex-direction: column
+
+@mixin transition
+  transition: 0.35s
+
+@mixin borderBox
+  box-sizing: border-box
+
+@mixin resetBtn
+  padding: 0
+  outline: none
+  background: none
+  border: none
+  text-decoration: none
+
+@mixin font-styles($font-size, $font-weight, $line-height)
+  font-size: $font-size
+  font-weight: $font-weight
+  line-height: $line-height
