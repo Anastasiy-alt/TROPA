@@ -1,0 +1,24 @@
+import styles from "./region.module.sass";
+import {RegionDataCard} from "@/const";
+import Star from '@/assets/icon/star.svg'
+import Bus from '@/assets/icon/bus.svg'
+import Like from '@/assets/icon/like.svg'
+
+export default function CardsRegion() {
+    return (
+        <div>
+            {RegionDataCard.map((card, key) => (
+                <a key={key} className={styles['card-reg']}>
+                    <img src={card.img} alt={card.text} className={styles['card-reg__img']}/>
+                    <p className={styles['card-reg__title']}>{card.text}</p>
+                    <div className={styles.test}>
+                        {card.tag.text}
+                        {card.tag.type === 'pop' && <Star className={styles['card-reg__icon']}/>}
+                        {card.tag.type === 'like' && <Bus className={styles['card-reg__icon']}/>}
+                        {card.tag.type === 'bus' && <Like className={styles['card-reg__icon']}/>}
+                    </div>
+                </a>
+            ))}
+        </div>
+    );
+}
