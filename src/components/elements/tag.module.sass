@@ -1,0 +1,22 @@
+@import '../../styles/color'
+@import '../../styles/mixin'
+
+.tag
+  text-decoration: none
+
+.tag__item
+  background-color: $white
+  border-radius: 10px
+  padding: 4px 10px
+  box-sizing: border-box
+  width: fit-content
+  @include font-styles(16px, 400, 20px)
+  color: $black
+  cursor: pointer
+  @include transition
+  outline: 1px solid transparent
+  text-decoration: none
+
+@include hover
+  .tag__item:hover
+    outline: 1px solid $green

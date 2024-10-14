@@ -11,7 +11,7 @@ export const RegionDataCard = [
         img: 'https://images.unsplash.com/photo-1633116910404-f93d8a8c8830?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         text: 'Томская область',
         tag: {
-            type: 'like',
+            type: 'bus',
             text: '10 маршрутов'
         }
     },
@@ -24,6 +24,14 @@ export const RegionDataCard = [
         }
     },
     {
+        img: 'https://images.unsplash.com/photo-1631776111497-b04469c42635?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        text: 'Республика Татарстан',
+        tag: {
+            type: 'bus',
+            text: '20 маршрутов'
+        }
+    },
+    {
         img: 'https://images.unsplash.com/photo-1634742223548-05d793b3f75f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         text: 'Камчатский край',
         tag: {
@@ -32,11 +40,11 @@ export const RegionDataCard = [
         }
     },
     {
-        img: 'https://images.unsplash.com/photo-1631776111497-b04469c42635?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        text: 'Республика Татарстан',
+        img: 'https://images.unsplash.com/photo-1635692326243-11668510acbe?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\n',
+        text: 'Республика Дагестан',
         tag: {
-            type: 'bus',
-            text: '20 маршрутов'
+            type: 'pop',
+            text: 'Популярный маршрут'
         }
     },
     {
@@ -102,8 +110,9 @@ export const RegionDataCard = [
             type: 'pop',
             text: 'Популярный маршрут'
         }
-    },
+    }
 ]
+
 
 
 

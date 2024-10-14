@@ -1,0 +1,45 @@
+@import '../../styles/color'
+@import '../../styles/mixin'
+
+.footer
+  background-color: $green-dark
+  padding: 80px 100px
+  box-sizing: border-box
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.footer__nav
+  display: flex
+  flex-direction: row
+  gap: 40px
+
+.footer__logo
+  width: 167px
+  height: 30px
+  cursor: pointer
+  margin-top: 10px
+
+.footer__nav-link
+  @include font-styles(20px, 400, 24px)
+  color: $white
+  text-decoration: none
+  cursor: pointer
+  border-bottom: 1px solid transparent
+  @include transition
+
+.footer__contacts
+  display: flex
+  flex-direction: column
+  gap: 7px
+
+.footer__contacts-link
+  @include font-styles(16px, 400, 20px)
+  color: $white
+  text-decoration: none
+  cursor: pointer
+
+@include hover
+  .footer__nav-link:hover
+    border-bottom: 1px solid $white
