@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
         <html lang="ru">
         <body className="page">
         <Header />
-        <main>
+        <main className='page__main'>
             {children}
         </main>
         </body>

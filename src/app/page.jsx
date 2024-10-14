@@ -5,7 +5,6 @@ import CardsRegion from "@/components/cards/region";
 export default function Home() {
   return (
     <div>
-MAIN page
 <CardsRegion />
 
     </div>
