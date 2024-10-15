@@ -2,12 +2,12 @@ import styles from "./button.module.sass";
 import Plus from '@/assets/icon/plus.svg'
 import PlusWhite from '@/assets/icon/plus-white.svg'
 
-export default function Button({text, download, white, disable, plus, onDownload}) {
+export default function Button({text, download, white, disable, plus, onClick}) {
     return (
             <button className={`${styles.button} ${download ? styles.button_download : ''} 
                   ${white ? styles.button_white : ''} ${disable ? styles.button_dis : ''}`}
                     disabled={disable}
-                    onClick={onDownload}
+                    onClick={onClick}
             >
                 <p className={styles.button__text}>{text}</p>
                 {plus && (

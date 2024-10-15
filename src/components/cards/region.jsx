@@ -1,5 +1,4 @@
 import styles from "./region.module.sass";
-import {RegionDataCard} from "@/const";
 import Star from '@/assets/icon/star.svg'
 import Bus from '@/assets/icon/bus.svg'
 import Like from '@/assets/icon/like.svg'

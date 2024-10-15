@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
-import { useRef } from "react";
+import React, {useState} from 'react';
+import {useRef} from "react";
 import {RegionDataCard, HashtagsData} from "@/const";
 import styles from "./page.module.sass";
 import CardsRegion from "@/components/cards/region";
@@ -8,14 +8,13 @@ import MainBanner from "@/components/main/banner";
 import Search from "@/components/elements/search";
 import Button from "@/components/elements/button";
 import Tag from "@/components/elements/tag"
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
-
 import Arrow from '@/assets/icon/arrow.svg'
+
 export default function Home() {
     const swiperRef = useRef(null);
-
+const [regionCards, setRegionCards] = useState(6);
     const handleNext = () => {
         if (swiperRef.current) {
             console.log(swiperRef)
@@ -28,21 +27,19 @@ export default function Home() {
             swiperRef.current.swiper.slidePrev();
         }
     };
-    const navigationNextRef = useRef(null);
-    const navigationPrevRef = useRef(null);
 
+    const handleMoreCards = () => {
+        if (regionCards < RegionDataCard.length) {
+            setRegionCards(regionCards + 6)
+        }
+    }
     return (
         <div>
             <MainBanner/>
             <div className={styles.main__block}>
-            <Search/>
+                <Search/>
                 <div className={styles['swiper-tag']}>
                     <Swiper
-                        modules={[Navigation]}
-                        navigation={{
-                            prevEl: navigationPrevRef.current,
-                            nextEl: navigationNextRef.current,
-                        }}
                         className={styles['swiper-tag__slider']}
                         spaceBetween={20}
                         slidesPerView={'auto'}
@@ -57,20 +54,24 @@ export default function Home() {
                         }
 
                     </Swiper>
-                    <Arrow className={`${styles['swiper-tag__button']} ${styles['next-slider-button']}`} onClick={navigationNextRef} />
-                    <Arrow className={`${styles['swiper-tag__button']} ${styles['prev-slider-button']}`} onClick={handlePrev} />
+                    <Arrow className={`${styles['swiper-tag__button']} ${styles['next-slider-button']}`}
+                           onClick={handleNext}/>
+                    <Arrow className={`${styles['swiper-tag__button']} ${styles['prev-slider-button']}`}
+                           onClick={handlePrev}/>
                 </div>
 
-            <div className={styles.main__cards}>
-                {RegionDataCard.map((card, key) => (
-                    <CardsRegion
-                        card={card}
-                        key={key}/>
-                ))}
-            </div>
-            <Button
-                text={'Ещё'}
-            />
+                <div className={styles.main__cards}>
+                    {RegionDataCard.slice(0, regionCards).map((card, key) => (
+                        <CardsRegion
+                            card={card}
+                            key={key}/>
+                    ))}
+                </div>
+                {regionCards < RegionDataCard.length &&
+                <Button
+                    onClick={handleMoreCards}
+                    text={'Ещё'}
+                />}
             </div>
         </div>
     );
