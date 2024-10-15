@@ -4,10 +4,10 @@ import Star from '@/assets/icon/star.svg'
 import Bus from '@/assets/icon/bus.svg'
 import Like from '@/assets/icon/like.svg'
 
-export default function CardsRegion({card, key}) {
+export default function CardsRegion({card}) {
     return (
         <div>
-                <a key={key} className={styles['card-reg']}>
+                <a className={styles['card-reg']}>
                     <img src={card.img} alt={card.text} className={styles['card-reg__img']}/>
                     <p className={styles['card-reg__title']}>{card.text}</p>
                     <div className={styles.test}>

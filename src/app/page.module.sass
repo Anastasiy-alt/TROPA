@@ -1,3 +1,6 @@
+@import '../styles/color'
+@import '../styles/mixin'
+
 .main__block
   display: flex
   flex-direction: column
@@ -16,3 +19,33 @@
   width: fit-content
   align-items: center
   justify-content: center
+
+.swiper-tag
+  position: relative
+  width: 100%
+
+.swiper-tag__button
+  width: 22px
+  height: 43px
+  position: absolute
+  top: 50%
+  color: $gray-dark
+  cursor: pointer
+
+.prev-slider-button
+  left: -42px
+  transform: scale(-1) translate(0, 50%)
+
+.next-slider-button
+  right: -42px
+  transform: translate(0, -50%)
+
+.swiper-tag
+  .swiper-tag__slider
+    max-width: 100%
+    overflow: hidden
+    position: relative
+
+.swiper-tag
+  .swiper-tag__slide
+    width: fit-content
