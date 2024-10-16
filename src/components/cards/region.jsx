@@ -6,7 +6,7 @@ import Like from '@/assets/icon/like.svg'
 export default function CardsRegion({card}) {
     return (
         <div>
-                <a className={styles['card-reg']}>
+                <a className={styles['card-reg']} href={`/photobank/${card.slug}`}>
                     <img src={card.img} alt={card.text} className={styles['card-reg__img']}/>
                     <p className={styles['card-reg__title']}>{card.text}</p>
                     <div className={styles.test}>

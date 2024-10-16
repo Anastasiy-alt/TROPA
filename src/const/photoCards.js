@@ -242,5 +242,5 @@ export const PhotoCards = [
             name: '',
             trips: ''
         }
-    }
+    },
 ]
