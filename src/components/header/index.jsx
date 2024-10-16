@@ -17,9 +17,9 @@ export default function Header() {
             </div>
             <nav className={styles.header__nav}>
                 <a href="/photobank"
-                   className={`${styles['header__nav-item']} ${window.location.pathname.includes('/photo') ? styles['header__nav-item_active'] : ''} `}>Фотобанк</a>
+                   className={`${styles['header__nav-item']} ${window?.location.pathname.includes('/photo') ? styles['header__nav-item_active'] : ''} `}>Фотобанк</a>
                 <a href="/challenges"
-                   className={`${styles['header__nav-item']} ${window.location.pathname.includes('/challenges') ? styles['header__nav-item_active'] : ''} `}>Челленджи</a>
+                   className={`${styles['header__nav-item']} ${window?.location.pathname.includes('/challenges') ? styles['header__nav-item_active'] : ''} `}>Челленджи</a>
                 <HeaderLk/>
             </nav>
         </header>

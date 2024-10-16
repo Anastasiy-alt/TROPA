@@ -3,15 +3,17 @@ import Eye from '@/assets/icon/eye.svg'
 import Tag from "@/components/elements/tag"
 
 
-export default function Photo() {
+export default function Photo({data}) {
     return (
-        <a className={styles.photo} href={`/photo/${id}`}>
-            <img src={img} alt="" className={styles.photo__img}/>
+        <a className={styles.photo} href={`/photo/${data.id}`}>
+            <img src={data.img} alt="" className={styles.photo__img}/>
             <div className={styles['photo__tag-block']}>
-                {/*<Tag v-for="(tag, idx) in tags" :key="idx" :text="tag"/>*/}
+                {data.tags.map((data, key) => (
+                    <Tag title={data.title} key={key} />
+                ))}
             </div>
             <div className={styles.photo__visible}>
-                {/*{{vision}}*/}
+                {data.views}
                 <Eye className={styles['photo__visible-icon']}/>
             </div>
         </a>
