@@ -18,12 +18,12 @@ export default function Photobank() {
     }
 
     return (
-        <div className={styles.stock}>
-            <BackArrow className={styles.stock__back}/>
+        <div className='stock'>
+            <BackArrow className='stock__back'/>
             <div className={styles['stock__title-block']}>
-                <div className={styles.stock__title}>
+                <h2 className={styles.stock__title}>
                     Фото со всей России
-                </div>
+                </h2>
                 <div className={styles.stock__tags}>
                     Популярные теги:
                     {HashtagsData.slice(0, 5).map((tag, key) => (<Tag title={tag.title} key={key} main={true}/>))}
