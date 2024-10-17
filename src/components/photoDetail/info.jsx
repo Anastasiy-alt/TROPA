@@ -1,93 +1,76 @@
 import styles from './info.module.sass'
-export default function InfoDetailPhoto() {
-    const tags = ['алтай', 'горы', 'лес']
-    const moreText = ref('Читать')
+import React, {useState, useEffect} from 'react';
+import {useRef} from "react";
+import Like from '@/assets/icon/like.svg'
+import LikeDef from '@/assets/icon/like-def.svg'
+import Button from "@/components/elements/button";
+import Map from "@/components/photoDetail/map";
 
-    const container = ref(null);
-    const textContent = ref(null);
-    const showMoreBtn = ref(null);
-    const showButton = ref(true);
-    const expanded = ref(false);
-    const windowWidth = ref()
+export default function InfoDetailPhoto({image}) {
+    const tags = ['алтай', 'горы', 'лес'];
+    const [moreText, setMoreText] = useState('Читать');
+    const [showButton, setShowButton] = useState(true);
+    const [expanded, setExpanded] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [countLikes, setCountLikes] = useState(21);
+    const [isLiked, setIsLiked] = useState(false);
+    const textContentRef = useRef(null);
 
     const toggleText = () => {
-        expanded.value = !expanded.value;
-        if (expanded.value) {
-            moreText.value = 'Закрыть'
-            textContent.value.style.maxHeight = `${textContent.value.scrollHeight}px`;
-            textContent.value.style.setProperty('-webkit-line-clamp', 'unset');
+        setExpanded(!expanded);
+        if (!expanded) {
+            setMoreText('Закрыть');
+            textContentRef.current.style.maxHeight = `${textContentRef.current.scrollHeight}px`;
+            textContentRef.current.style.setProperty('-webkit-line-clamp', 'unset');
         } else {
-            moreText.value = 'Читать'
+            setMoreText('Читать');
             calculateAndApplyStyle();
         }
     };
 
-    const defaultStyles = (count) => {
-        textContent.value.style.display = "-webkit-box";
-        textContent.value.style.webkitBoxOrient = "vertical";
-        textContent.value.style.overflow = "hidden";
-        textContent.value.style.setProperty('-webkit-line-clamp', count);
-    }
-
     const calculateAndApplyStyle = () => {
-        windowWidth.value = window.innerWidth
-        if (window.innerWidth > 1364) {
-            const lineHeight = parseFloat(window.getComputedStyle(textContent.value).lineHeight);
-            const textContainerHeight = 70
-            // Math.round(300 - (title.value.scrollHeight + 95))
-            const textContainerLineCount = Math.round(textContainerHeight / lineHeight)
-            const actualLines = textContent.value.scrollHeight / lineHeight;
-            if (actualLines > textContainerLineCount - 1 && actualLines !== textContainerLineCount) {
-                textContent.value.style.maxHeight = `${lineHeight * (textContainerLineCount - 1)}px`;
-                setTimeout(() => defaultStyles(3), 350);
-            }
-            if (actualLines <= textContainerLineCount) {
-                showButton.value = false;
-                textContent.value.style.maxHeight = `${textContent.value.scrollHeight}px`;
+        if (windowWidth > 1364) {
+            const lineHeight = parseFloat(window.getComputedStyle(textContentRef.current).lineHeight);
+            const textContainerHeight = 70;
+            const textContainerLineCount = Math.round(textContainerHeight / lineHeight);
+            const actualLines = textContentRef.current.scrollHeight / lineHeight;
+
+            if (actualLines > textContainerLineCount - 1) {
+                textContentRef.current.style.maxHeight = `${lineHeight * (textContainerLineCount - 1)}px`;
+                setTimeout(() => {
+                    textContentRef.current.style.display = "-webkit-box";
+                    textContentRef.current.style.webkitBoxOrient = "vertical";
+                    textContentRef.current.style.overflow = "hidden";
+                    textContentRef.current.style.setProperty('-webkit-line-clamp', 3);
+                }, 350);
             } else {
-                showButton.value = true;
-                if (expanded.value) {
-                    expanded.value = false
-                    moreText.value = 'Read'
-                }
+                setShowButton(false);
+                textContentRef.current.style.maxHeight = `${textContentRef.current.scrollHeight}px`;
             }
         } else {
-            textContent.value.style.display = "flex";
-            textContent.value.style.maxHeight = "fit-content";
-            textContent.value.style.webkitBoxOrient = "vertical";
-            textContent.value.style.overflow = "visible";
-            textContent.value.style.setProperty('-webkit-line-clamp', 'auto');
+            textContentRef.current.style.display = "flex";
+            textContentRef.current.style.maxHeight = "fit-content";
+            textContentRef.current.style.webkitBoxOrient = "vertical";
+            textContentRef.current.style.overflow = "visible";
+            textContentRef.current.style.setProperty('-webkit-line-clamp', 'auto');
         }
     };
-// const isLiked = card.likes.some(i => i._id === currentUser._id);
-// function handleCardLike(card) {
-//   const isLiked = card.likes.some(i => i._id === currentUser._id);
-//   api.changeLikeCardStatus(card._id, !isLiked)
-//       .then((newCard) => {
-//         setCards((state) => state.map((c) => c._id === card._id ? newCard : c));
-//       })
-//       .catch((error) => {
-//         console.log(`Ошибка: ${error}`);
-//       });
-// }
-// const handleLikeClick = () => {
-//   onCardLike(card);
-// };
-    const countLikes = ref(21)
-    const isLiked = ref(false)
-    const toogleLike = () => {
-        isLiked.value = !isLiked.value
-        if (isLiked.value) {
-            countLikes.value++
-        } else {
-            countLikes.value--
-        }
-    }
 
-    onMounted(() => {
-        windowWidth.value = window.innerWidth
+    const toggleLike = () => {
+        setIsLiked(!isLiked);
+        setCountLikes(isLiked ? countLikes - 1 : countLikes + 1);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+            calculateAndApplyStyle();
+        };
+        window.addEventListener('resize', handleResize);
         calculateAndApplyStyle();
-    })
+        return () => window.removeEventListener('resize', handleResize);
+    }, [windowWidth]);
+
     return (
         <div className={styles.info}>
             <div>
@@ -109,8 +92,8 @@ export default function InfoDetailPhoto() {
                 </div>
             </div>
             <div className={styles.info__blocks}>
-                <div className={`${styles.info__description} ${styles["info__description-anim"]}`} ref="container">
-                    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`} ref="textContent">
+                <div className={`${styles.info__description} ${styles["info__description-anim"]}`} >
+                    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`} ref={textContentRef}>
                         В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит
                         посетить этот
                         лес, вас точно съедят!
@@ -119,8 +102,8 @@ export default function InfoDetailPhoto() {
                         лес, вас точно съедят!
                     </p>
                     {showButton && (
-                        <button ref="showMoreBtn" className={styles["info__description-more"]}
-                                onClick="toggleText">
+                        <button className={styles["info__description-more"]}
+                                onClick={toggleText}>
                             {moreText}
                         </button>
                     )}
@@ -143,19 +126,27 @@ export default function InfoDetailPhoto() {
         </div>
 
 
-    {/*<PhotoDetailMap/>*/}
+    <Map/>
 
 
-    <div className={styles["info__buttons-block"]}>
-        {/*<ElementsButton :text="'Скачать фото'" :download="true"/>*/}
-        <div className={styles["info__like-block"]}>
-            {/*<IconLike v-if="isLiked" className="info__like" filled onClick="toogleLike"/>*/}
-            {/*<IconLikeDef v-if="!isLiked" className="info__like" filled onClick="toogleLike"/>*/}
-            <p className={styles["info__like-count"]}>{countLikes}</p>
+            <div className={styles["info__buttons-block"]}>
+                <a href={image.img} download>
+                    <Button text={'Скачать фото'} download={true}/>
+                    </a>
+
+                <div className={styles["info__like-block"]}>
+                    {isLiked ? (
+                        <Like className={styles.info__like} onClick={toggleLike}/>
+                    ) : (
+                        <LikeDef className={styles.info__like} onClick={toggleLike}/>
+
+                    )}
+
+                    <p className={styles["info__like-count"]}>{countLikes}</p>
+                </div>
+                {/*<IconLike className="info__like" filled />*/}
+
+            </div>
         </div>
-        <!--      <IconLike className="info__like" filled />-->
-
-    </div>
-</div>
-)
+    )
 }

@@ -48,7 +48,7 @@ const [regionCards, setRegionCards] = useState(6);
                         {
                             HashtagsData.map((tag, key) => (
                                 <SwiperSlide className={styles['swiper-tag__slide']} key={key}>
-                                    <Tag title={tag.title}/>
+                                    <Tag title={tag.title} main={true} />
                                 </SwiperSlide>
                             ))
                         }

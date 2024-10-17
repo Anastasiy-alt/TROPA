@@ -32,9 +32,8 @@ export default function PhotoId() {
                     <img
                         src={foundPhoto.img}
                         alt="" className={styles["main-info__img"]}/>
-                    <InfoDetailPhoto/>
+                    <InfoDetailPhoto image={foundPhoto}/>
                 </div>
-
             )}
             {/*<PhotoDetailSlider/>*/}
         </div>
