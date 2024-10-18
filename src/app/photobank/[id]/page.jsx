@@ -14,14 +14,14 @@ export default function PhotobankID() {
     const router = useParams();
     const slug = router.id;
     const [foundRegion, setFoundRegion] = useState(null);
-    const [photoCount, setPhotoCount] = useState(7);
+    const [photoCount, setPhotoCount] = useState(10);
 
     const findRegionBySlug = (data) => {
         return data.RegionDataCard.find(region => region.slug === data.slug);
     };
     const handleMoreCards = () => {
         if (photoCount < PhotoCards.length) {
-            setPhotoCount(photoCount + 6)
+            setPhotoCount(photoCount + 10)
         }
     }
 
@@ -44,12 +44,12 @@ export default function PhotobankID() {
                             <div className={styles.stock__tags}>
                                 Популярные теги:
                                 {HashtagsData.slice(0, 5).map((tag, key) => (
-                                    <Tag title={tag.title} key={key} main={true}/>))}
+                                    <Tag title={tag.title} key={tag.slug} main={true}/>))}
                             </div>
                         </div>
                         <div className={styles.stock__photos}>
                             <Masonry columnsCount={3} gutter={"30px"}>
-                                {PhotoCards.slice(0, photoCount).map((photo, key) => (<Photo key={key} data={photo}/>))}
+                                {PhotoCards.slice(0, photoCount).map((photo, key) => (<Photo key={`keyPhoto${photo.id}`} data={photo}/>))}
                             </Masonry>
                         </div>
                         <Button

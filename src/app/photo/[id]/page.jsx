@@ -20,7 +20,6 @@ export default function PhotoId() {
         if (id) {
             const photo = findPhotById({PhotoCards, id});
             setFoundPhoto(photo)
-            console.log(photo, id);
         }
     }, [id]);
 

@@ -12,7 +12,7 @@ export default function InfoDetailPhoto({image}) {
     const [showButton, setShowButton] = useState(true);
     const [expanded, setExpanded] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [countLikes, setCountLikes] = useState(21);
+    const [countLikes, setCountLikes] = useState(image.likes);
     const [isLiked, setIsLiked] = useState(false);
     const textContentRef = useRef(null);
 
@@ -76,14 +76,14 @@ export default function InfoDetailPhoto({image}) {
             <div>
 
 
-                <a href="/user/1" className={styles["info__user-block"]}>
+                <a href={`/user/${image.author.id}`} className={styles["info__user-block"]}>
                     <img
-                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={image.author.avatar}
                         alt=""
                         className={styles["info__user-img"]} />
                         <div className={styles.info__user}>
-                            <p className={styles["info__user-name"]}>Марина Баринова</p>
-                            <p className={styles["info__user-travelers"]}>5 поездок</p>
+                            <p className={styles["info__user-name"]}>{image.author.name}</p>
+                            <p className={styles["info__user-travelers"]}>{image.author.trips}</p>
                         </div>
                 </a>
                 <div className={styles.tags}>

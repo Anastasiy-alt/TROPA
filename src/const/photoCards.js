@@ -21,6 +21,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -42,6 +44,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     }
@@ -72,6 +76,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     }
@@ -94,6 +100,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     }
@@ -116,6 +124,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     }
@@ -138,6 +148,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     }
@@ -164,6 +176,7 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             trips: '17 поездок'
         }
     }
@@ -186,6 +199,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -211,6 +226,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -223,8 +240,8 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: '',
-                slug: ''
+                title: 'природа',
+                slug: 'priroda'
             },
         ],
         views: 570,
@@ -232,6 +249,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -253,6 +272,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: 'Челябинск'
         }
     },
@@ -274,6 +295,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -295,6 +318,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -307,8 +332,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'горы закат',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            },
+            {
+                title: 'закат',
+                slug: 'zakat'
             },
         ],
         views: 240,
@@ -316,6 +345,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -328,8 +359,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'памятник зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            },
+            {
+                title: 'архитектура',
+                slug: 'arkhitektura'
             },
         ],
         views: 630,
@@ -337,6 +372,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -349,8 +386,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'животные озеро',
-                slug: ''
+                title: 'озеро',
+                slug: 'ozero'
+            },
+            {
+                title: 'животные',
+                slug: 'zhivotnyye'
             },
         ],
         views: 980,
@@ -358,6 +399,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -370,8 +413,16 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'озеро зима скалы',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            },
+            {
+                title: 'озеро',
+                slug: 'ozero'
+            },
+            {
+                title: 'горы',
+                slug: 'gory'
             },
         ],
         views: 120,
@@ -379,6 +430,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -391,8 +444,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'озеро зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            },
+            {
+                title: 'озеро',
+                slug: 'ozero'
             },
         ],
         views: 960,
@@ -400,6 +457,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -412,8 +471,16 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'архитектура зима река',
-                slug: ''
+                title: 'река',
+                slug: 'reka'
+            },
+            {
+                title: 'зима',
+                slug: 'zima'
+            },
+            {
+                title: 'архитектура',
+                slug: 'arkhitektura'
             },
         ],
         views: 370,
@@ -421,6 +488,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -433,8 +502,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'птицы озеро',
-                slug: ''
+                title: 'птицы',
+                slug: 'ptitsy'
+            },
+            {
+                title: 'озеро',
+                slug: 'ozero'
             },
         ],
         views: 750,
@@ -442,6 +515,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -454,8 +529,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'архитектура ночь',
-                slug: ''
+                title: 'архитектура',
+                slug: 'arkhitektura'
+            },
+            {
+                title: 'ночь',
+                slug: 'noch'
             },
         ],
         views: 490,
@@ -463,6 +542,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -475,8 +556,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'рассвет лето',
-                slug: ''
+                title: 'рассвет',
+                slug: 'rassvet'
+            },
+            {
+                title: 'лето',
+                slug: 'leto'
             },
         ],
         views: 500,
@@ -484,6 +569,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -496,8 +583,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'лес',
+                slug: 'les'
+            },
+            {
+                title: 'зима',
+                slug: 'zima'
             },
         ],
         views: 240,
@@ -505,6 +596,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -517,8 +610,8 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'растения',
-                slug: ''
+                title: 'цветы',
+                slug: 'tsvety'
             },
         ],
         views: 50,
@@ -526,6 +619,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -538,8 +633,8 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'музей архитектура',
-                slug: ''
+                title: 'архитектура',
+                slug: 'arkhitektura'
             },
         ],
         views: 630,
@@ -547,6 +642,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -559,8 +656,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'река горы',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            },
+            {
+                title: 'река',
+                slug: 'reka'
             },
         ],
         views: 980,
@@ -568,6 +669,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -580,8 +683,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'маяк ночь',
-                slug: ''
+                title: 'ночь',
+                slug: 'noch'
+            },
+            {
+                title: 'море',
+                slug: 'more'
             },
         ],
         views: 120,
@@ -589,6 +696,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -601,8 +710,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'море природа',
-                slug: ''
+                title: 'море',
+                slug: 'more'
+            },
+            {
+                title: 'природа',
+                slug: 'priroda'
             },
         ],
         views: 960,
@@ -610,6 +723,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -622,8 +737,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'горы лето',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            },
+            {
+                title: 'лето',
+                slug: 'leto'
             },
         ],
         views: 370,
@@ -631,6 +750,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -643,8 +764,16 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'горы река лес',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            },
+            {
+                title: 'лес',
+                slug: 'les'
+            },
+            {
+                title: 'река',
+                slug: 'reka'
             },
         ],
         views: 750,
@@ -652,6 +781,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -664,8 +795,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'цветы лето',
-                slug: ''
+                title: 'цветы',
+                slug: 'tsvety'
+            },
+            {
+                title: 'лето',
+                slug: 'leto'
             },
         ],
         views: 490,
@@ -673,6 +808,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -686,7 +823,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'лес',
-                slug: ''
+                slug: 'les'
             },
         ],
         views: 500,
@@ -694,6 +831,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -706,8 +845,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'осень лес',
-                slug: ''
+                title: 'лес',
+                slug: 'les'
+            }, {
+                title: 'осень',
+                slug: 'osen'
             },
         ],
         views: 240,
@@ -715,6 +857,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -728,7 +872,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'лес',
-                slug: ''
+                slug: 'les'
             },
         ],
         views: 50,
@@ -736,6 +880,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -748,8 +894,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'горы цветы',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            }, {
+                title: 'цветы',
+                slug: 'tsvety'
             },
         ],
         views: 630,
@@ -757,6 +906,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -769,8 +920,14 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'горы зима река',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'река',
+                slug: 'reka'
+            }, {
+                title: 'горы',
+                slug: 'gory'
             },
         ],
         views: 980,
@@ -778,6 +935,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -790,8 +949,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес осень',
-                slug: ''
+                title: 'лес',
+                slug: 'les'
+            }, {
+                title: 'осень',
+                slug: 'osen'
             },
         ],
         views: 120,
@@ -799,6 +961,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -812,7 +976,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'море',
-                slug: ''
+                slug: 'more'
             },
         ],
         views: 960,
@@ -820,6 +984,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -833,7 +999,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'лес',
-                slug: ''
+                slug: 'les'
             },
         ],
         views: 370,
@@ -841,6 +1007,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -853,8 +1021,14 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес река лето',
-                slug: ''
+                title: 'лес',
+                slug: 'les'
+            }, {
+                title: 'река',
+                slug: 'reka'
+            }, {
+                title: 'лето',
+                slug: 'leto'
             },
         ],
         views: 750,
@@ -862,6 +1036,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -874,8 +1050,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 490,
@@ -883,6 +1062,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -904,6 +1085,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -916,8 +1099,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 240,
@@ -925,6 +1111,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -937,8 +1125,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 50,
@@ -946,6 +1137,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -959,7 +1152,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'горы',
-                slug: ''
+                slug: 'gory'
             },
         ],
         views: 630,
@@ -967,6 +1160,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -979,8 +1174,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'скалы природа лето',
-                slug: ''
+                title: 'природа',
+                slug: 'priroda'
+            }, {
+                title: 'лето',
+                slug: 'leto'
             },
         ],
         views: 980,
@@ -988,6 +1186,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -1000,8 +1200,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'осень лес',
-                slug: ''
+                title: 'осень',
+                slug: 'osen'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 120,
@@ -1009,6 +1212,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -1021,8 +1226,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 960,
@@ -1030,6 +1238,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },
@@ -1042,8 +1252,14 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'природа зима горы',
-                slug: ''
+                title: 'горы',
+                slug: 'gory'
+            }, {
+                title: 'природа',
+                slug: 'priroda'
+            }, {
+                title: 'зима',
+                slug: 'zima'
             },
         ],
         views: 370,
@@ -1051,6 +1267,8 @@ export const PhotoCards = [
         author: {
             id: '1',
             name: 'Мария',
+            avatar: 'https://images.unsplash.com/photo-1541515929569-1771522cbaa9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '7 поездок'
         }
     },
@@ -1063,8 +1281,12 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес природа',
-                slug: ''
+                title: 'лес',
+                slug: 'les'
+            },
+            {
+                title: 'природа',
+                slug: 'priroda'
             },
         ],
         views: 750,
@@ -1072,6 +1294,8 @@ export const PhotoCards = [
         author: {
             id: '4',
             name: 'Евгения',
+            avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '12 поездок'
         }
     },
@@ -1085,7 +1309,7 @@ export const PhotoCards = [
         tags: [
             {
                 title: 'архитектура',
-                slug: ''
+                slug: 'arkhitektura'
             },
         ],
         views: 490,
@@ -1093,6 +1317,8 @@ export const PhotoCards = [
         author: {
             id: '3',
             name: 'Дмитрий',
+            avatar: 'https://images.unsplash.com/photo-1683526513573-1effdda48dcf?q=80&w=2543&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '17 поездок'
         }
     },
@@ -1105,8 +1331,11 @@ export const PhotoCards = [
         description: '',
         tags: [
             {
-                title: 'лес зима',
-                slug: ''
+                title: 'зима',
+                slug: 'zima'
+            }, {
+                title: 'лес',
+                slug: 'les'
             },
         ],
         views: 500,
@@ -1114,6 +1343,8 @@ export const PhotoCards = [
         author: {
             id: '2',
             name: 'Влад',
+            avatar: 'https://images.unsplash.com/photo-1516831906352-1623190ca036?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
             trips: '4 поездки'
         }
     },

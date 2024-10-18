@@ -80,8 +80,8 @@ export const HashtagsData = [
         slug: 'leto'
     },
     {
-        title: 'луна',
-        slug: 'luna'
+        title: 'ночь',
+        slug: 'noch'
     },
     {
         title: 'тайга',
