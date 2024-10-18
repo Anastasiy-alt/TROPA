@@ -45,15 +45,6 @@ export const RegionDataCard = [
         }
     },
     {
-        img: 'https://images.unsplash.com/photo-1635692326243-11668510acbe?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        text: 'Республика Дагестан',
-        slug: 'respublika-dagestan',
-        tag: {
-            type: 'pop',
-            text: 'Популярный маршрут'
-        }
-    },
-    {
         img: 'https://images.unsplash.com/photo-1568894501978-95cb42b4f95f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         text: 'Краснодарский край',
         slug: 'krasnodarskiy-kraj',
@@ -99,30 +90,12 @@ export const RegionDataCard = [
         }
     },
     {
-        img: 'https://images.unsplash.com/photo-1525302220185-c387a117886e?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        text: 'Республика Коми',
-        slug: 'respublika-komi',
-        tag: {
-            type: 'pop',
-            text: 'Популярный маршрут'
-        }
-    },
-    {
         img: 'https://images.unsplash.com/photo-1548130729-90d4d11826f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         text: 'Иркутская область',
         slug: 'irkutskaya-oblast',
         tag: {
             type: 'like',
             text: '300'
-        }
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?q=80&w=2549&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        text: 'Москва',
-        slug: 'moskva',
-        tag: {
-            type: 'pop',
-            text: 'Популярный маршрут'
         }
     }
 ];

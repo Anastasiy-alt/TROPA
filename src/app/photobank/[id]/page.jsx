@@ -20,9 +20,9 @@ export default function PhotobankID() {
         return data.RegionDataCard.find(region => region.slug === data.slug);
     };
     const handleMoreCards = () => {
-        if (photoCount < PhotoCards.length) {
-            setPhotoCount(photoCount + 10)
-        }
+
+        setPhotoCount(photoCount + 10)
+
     }
 
     useEffect(() => {
@@ -35,28 +35,32 @@ export default function PhotobankID() {
     return (
         <div>
             {foundRegion && (
-                    <div className='stock'>
-                        <BackArrow className='stock__back'/>
-                        <div className={styles['stock__title-block']}>
-                            <h2 className={styles.stock__title}>
-                                {foundRegion.text}
-                            </h2>
-                            <div className={styles.stock__tags}>
-                                Популярные теги:
-                                {HashtagsData.slice(0, 5).map((tag, key) => (
-                                    <Tag title={tag.title} key={tag.slug} main={true}/>))}
-                            </div>
+                <div className='stock'>
+                    <BackArrow className='stock__back'/>
+                    <div className={styles['stock__title-block']}>
+                        <h2 className={styles.stock__title}>
+                            {foundRegion.text}
+                        </h2>
+                        <div className={styles.stock__tags}>
+                            Популярные теги:
+                            {HashtagsData.slice(0, 5).map((tag, key) => (
+                                <Tag title={tag.title} key={tag.slug} main={true}/>))}
                         </div>
-                        <div className={styles.stock__photos}>
-                            <Masonry columnsCount={3} gutter={"30px"}>
-                                {PhotoCards.slice(0, photoCount).map((photo, key) => (<Photo key={`keyPhoto${photo.id}`} data={photo}/>))}
-                            </Masonry>
-                        </div>
+                    </div>
+                    <div className={styles.stock__photos}>
+                        <Masonry columnsCount={3} gutter={"30px"}>
+                            {PhotoCards.filter(e => foundRegion.slug === e.regionId).slice(0, photoCount).map((photo, key) =>
+                                (<Photo key={`keyPhoto${photo.id}`} data={photo}/>))}
+                        </Masonry>
+                    </div>
+                    {photoCount < PhotoCards.filter(e => foundRegion.slug === e.regionId).length && (
                         <Button
                             onClick={handleMoreCards}
                             text={'Ещё'}
                         />
-                    </div>
+                    )}
+
+                </div>
             )}
         </div>
     );

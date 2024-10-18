@@ -1,0 +1,52 @@
+@import '../../styles/color'
+@import '../../styles/mixin'
+
+.userinfo
+  display: flex
+  flex-direction: row
+  padding: 20px 15px 20px 20px
+  gap: 20px
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08)
+  border-radius: 20px
+  width: 720px
+  box-sizing: border-box
+
+.userinfo__img
+  width: 200px
+  height: 200px
+  object-fit: cover
+  border-radius: 15px
+
+.userinfo__block
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.userinfo__name
+  margin: 0
+  padding: 0
+  @include font-styles(20px, 500, 24px)
+  color: $black
+
+.userinfo__type
+  margin: 0
+  padding: 0
+  @include font-styles(16px, 400, 20px)
+  color: $gray-dark
+
+.userinfo__value
+  margin: 0
+  padding: 0
+  @include font-styles(16px, 400, 20px)
+  color: $black
+
+.userinfo__travels
+  margin: 0
+  padding: 0
+  @include font-styles(16px, 400, 20px)
+  color: $green
+
+.userinfo__text
+  display: flex
+  flex-direction: column
+  gap: 5px

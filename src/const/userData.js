@@ -8,6 +8,14 @@ export const UserData = [
         old: '21 год',
         photos: [
             {
+                id: '58',
+                img: 'https://images.unsplash.com/photo-1709118281427-65df141ad228?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
+                id: '57',
+                img: 'https://images.unsplash.com/photo-1635499829006-f18084159cd7?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
                 id: '6',
                 img: 'https://images.unsplash.com/photo-1647148705255-b0d5a5f407a4?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             },
@@ -55,6 +63,33 @@ export const UserData = [
                 id: '49',
                 img: 'https://images.unsplash.com/photo-1614616963794-9980fb120006?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             },
+        ],
+        awards: [
+            {
+                text: 'Покоритель вершин - сделала фото на высоте 2000 метров!',
+                icon: 'bear'
+            },
+
+            {
+                text: "Первый шаг на тропе - загрузил свою первую фотографию!",
+                icon: 'bear'
+            },
+            {
+                text: "Зеленый паломник - 10 фото с природными заповедниками!",
+                icon: 'tree'
+            },
+            {
+                text: "Охотник на приключения - 3 неожиданных маршрута!",
+                icon: 'bus'
+            },
+            {
+                text: "Медвежья удача - сфотографировал редкое животное!",
+                icon: 'bear'
+            },
+            {
+                text: "Устойчивый путешественник - 5 фото с природой и без людей!",
+                icon: 'tree'
+            }
         ]
     },
     {
@@ -65,6 +100,10 @@ export const UserData = [
         city: 'Челябинск',
         old: '19',
         photos: [
+            {
+                id: '61',
+                img: 'https://images.unsplash.com/photo-1548130729-90d4d11826f8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
             {
                 id: '1',
                 img: 'https://images.unsplash.com/photo-1697730317007-9bee773149fb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -112,8 +151,53 @@ export const UserData = [
             {
                 id: '30',
                 img: 'https://images.unsplash.com/photo-1680674748902-9546b14b5f00?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
+                id: '53',
+                img: 'https://images.unsplash.com/photo-1624128929438-5334bddffcbf?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             }
 
+        ],
+        awards: [
+            {
+                text: "Медвежонок-новичок - загрузил 3 фото за один день!",
+                icon: 'bear'
+            },
+            {
+                text: 'Горный исследователь - сфотографировал 3 высоких перевала.',
+                icon: 'tree'
+            },
+
+            {
+                text: 'Лесная прогулка - провел 10 часов в лесу, наслаждаясь природой.',
+                icon: 'tree'
+            },
+            {
+                text: "Автобусный марафон - проехал 500 км за один день!",
+                icon: 'bus'
+            },
+            {
+                text: 'Лесная сказка - сфотографировал 5 сказочных пейзажей.',
+                icon: 'tree'
+            },
+
+            {
+                text: 'Лесной шпион - запечатлел и животных, и птиц естественной среде.',
+                icon: 'bear'
+            },
+
+            {
+                text: 'Путешествие на выходные - провел 2 дня в новом городе.',
+                icon: 'bus'
+            },
+            {
+                text: 'Зеленая планета - сфотографировал 5 заповедников.',
+                icon: 'tree'
+            },
+            {
+                text: 'Солнечный день - сфотографировал 7 солнечных пейзажей.',
+                icon: 'tree'
+            },
         ]
     },
     {
@@ -125,8 +209,25 @@ export const UserData = [
         old: '26 лет',
         photos: [
             {
+                id: '59',
+                img: 'https://images.unsplash.com/photo-1548834925-e48f8a27ae6f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
+                id: '62',
+                img: 'https://images.unsplash.com/photo-1634742223548-05d793b3f75f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
+                id: '56',
+                img: 'https://images.unsplash.com/photo-1631776111497-b04469c42635?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
+            {
+                id: '54',
+                img: 'https://images.unsplash.com/photo-1633116910404-f93d8a8c8830?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
+            },
+            {
                 id: '10',
-                img: 'https://images.unsplash.com/photo-1625780251917-7da47375b8e2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                img: 'https://images.unsplash.com/photo-1568894501978-95cb42b4f95f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             },
             {
                 id: '9',
@@ -188,6 +289,63 @@ export const UserData = [
                 id: '51',
                 img: 'https://images.unsplash.com/photo-1661615826330-85516ecf908b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             },
+        ],
+        awards: [
+            {
+                text: 'Городской исследователь - сделал фото в 5 городах.',
+                icon: 'bus'
+            },
+            {
+                text: 'Зеленый мир - сфотографировал 5 различных экосистем.',
+                icon: 'tree'
+            },
+
+            {
+                text: 'Фотограф-эксперт - получил 100 лайков на свои фотографии!',
+                icon: 'bear'
+            },
+
+
+            {
+                text: "Автобусный манифест - проехал 1000 км на автобусе!",
+                icon: 'bus'
+            },
+            {
+                text: "Медвежья память - загрузил фото с самой яркой поездки!",
+                icon: 'bear'
+            },
+            {
+                text: 'Лесной мудрец - пробежал 10 км по лесным тропам.',
+                icon: 'tree'
+            },
+
+            {
+                text: 'Путешествие по России - посетил 10 различных регионов страны.',
+                icon: 'bus'
+            },
+
+
+            {
+                text: "Фотограф-коллекционер - собрал 20 уникальных снимков!",
+                icon: 'bus'
+            },
+            {
+                text: "Фотограф-романтик - загрузил фото гор в 5 разных местах!",
+                icon: 'tree'
+            },
+            {
+                text: "Путешественник со стажем - 10 новых мест за месяц!",
+                icon: 'bus'
+            },
+            {
+                text: "Автобусный путешественник - 3 разных маршрута за один день!",
+                icon: 'bus'
+            },
+            {
+                text: 'Лесной художник - создал 5 художественных фотографий природы.',
+                icon: 'tree'
+            },
+
         ]
     },
     {
@@ -198,6 +356,10 @@ export const UserData = [
         city: '25',
         old: 'Ханты-Мансийск',
         photos: [
+            {
+                id: '60',
+                img: 'https://images.unsplash.com/photo-1705750817596-1a2ec764f778?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            },
             {
                 id: '4',
                 img: 'https://images.unsplash.com/photo-1667146065564-5365be88d0be?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -246,6 +408,30 @@ export const UserData = [
                 id: '50',
                 img: 'https://images.unsplash.com/photo-1709118281466-8269c5a5d2f9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             },
+            {
+                id: '55',
+                img: 'https://images.unsplash.com/photo-1674328496056-c55e061eb8ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            }
+        ],
+        awards: [
+            {
+                text: 'Туристический маршрут - пробежала по 5 различным туристическим тропам.',
+                icon: 'bus'
+            },
+
+            {
+                text: "Северное сияние - загрузил фото с северного региона!",
+                icon: 'bear'
+            },
+            {
+                text: 'Лесной фотограф - сделала 10 снимков в лесу.',
+                icon: 'tree'
+            },
+            {
+                text: 'Поездка в неизвестность - сделала фото в 5 местах, куда никогда не ездил.',
+                icon: 'bus'
+            },
+
         ]
     }
 ]
