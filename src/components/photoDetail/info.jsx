@@ -80,11 +80,11 @@ export default function InfoDetailPhoto({image}) {
                     <img
                         src={image.author.avatar}
                         alt=""
-                        className={styles["info__user-img"]} />
-                        <div className={styles.info__user}>
-                            <p className={styles["info__user-name"]}>{image.author.name}</p>
-                            <p className={styles["info__user-travelers"]}>{image.author.trips}</p>
-                        </div>
+                        className={styles["info__user-img"]}/>
+                    <div className={styles.info__user}>
+                        <p className={styles["info__user-name"]}>{image.author.name}</p>
+                        <p className={styles["info__user-travelers"]}>{image.author.trips}</p>
+                    </div>
                 </a>
                 <div className={styles.tags}>
                     {/*<ElementsTag v-for="(tag, idx) in tags" :key="idx" :text="tag"/>*/}
@@ -92,8 +92,9 @@ export default function InfoDetailPhoto({image}) {
                 </div>
             </div>
             <div className={styles.info__blocks}>
-                <div className={`${styles.info__description} ${styles["info__description-anim"]}`} >
-                    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`} ref={textContentRef}>
+                <div className={`${styles.info__description} ${styles["info__description-anim"]}`}>
+                    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`}
+                       ref={textContentRef}>
                         В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит
                         посетить этот
                         лес, вас точно съедят!
@@ -114,25 +115,23 @@ export default function InfoDetailPhoto({image}) {
                 <div className={styles.info__coordinates}>
                     <div className={styles["info__coordinates-value-block"]}>
                         <p className={styles["info__coordinates-value"]}>Регион:</p>
-                    <p className={styles["info__coordinates-value"]}>Место:</p>
-                    <p className={styles["info__coordinates-value"]}>Путешествие:</p>
-                </div>
-                <div className={styles["info__coordinates-value-block"]}>
-                    <p className={styles["info__coordinates-value"]}>Республика Алтай</p>
-                    <p className={styles["info__coordinates-value"]}>Медвежий лес</p>
-                    <p className={styles["info__coordinates-value"]}>Этно-Алтай</p>
+                        <p className={styles["info__coordinates-value"]}>Место:</p>
+                        <p className={styles["info__coordinates-value"]}>Путешествие:</p>
+                    </div>
+                    <div className={styles["info__coordinates-value-block"]}>
+                        <p className={styles["info__coordinates-value"]}>{image.region}</p>
+                        <p className={styles["info__coordinates-value"]}>Медвежий лес</p>
+                        <p className={styles["info__coordinates-value"]}>Этно-Алтай</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-    <Map/>
-
-
+            <Map reg={image.regionId}/>
             <div className={styles["info__buttons-block"]}>
                 <a href={image.img} download>
                     <Button text={'Скачать фото'} download={true}/>
-                    </a>
+                </a>
 
                 <div className={styles["info__like-block"]}>
                     {isLiked ? (
@@ -141,7 +140,6 @@ export default function InfoDetailPhoto({image}) {
                         <LikeDef className={styles.info__like} onClick={toggleLike}/>
 
                     )}
-
                     <p className={styles["info__like-count"]}>{countLikes}</p>
                 </div>
                 {/*<IconLike className="info__like" filled />*/}

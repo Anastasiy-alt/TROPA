@@ -1,11 +1,12 @@
 "use client"
 import styles from './page.module.sass'
-import BackArrow from "@/assets/icon/back-arrow.svg";
 import React, {useEffect, useState} from "react";
 import {useParams} from 'next/navigation';
 import {PhotoCards} from "@/const";
 import InfoDetailPhoto from '@/components/photoDetail/info'
 import SliderDetailPhoto from '@/components/photoDetail/slider'
+import BackButton from "@/components/elements/back";
+
 export default function PhotoId() {
 
     const router = useParams();
@@ -25,7 +26,7 @@ export default function PhotoId() {
 
     return(
         <div className='stock'>
-            <BackArrow className='stock__back'/>
+            <BackButton />
             {foundPhoto && (
                 <div className={styles["main-info"]}>
                     <img
@@ -34,7 +35,7 @@ export default function PhotoId() {
                     <InfoDetailPhoto image={foundPhoto}/>
                 </div>
             )}
-            {/*<PhotoDetailSlider/>*/}
+            <SliderDetailPhoto photo={foundPhoto} />
         </div>
     )
 }

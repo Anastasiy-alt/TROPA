@@ -2,10 +2,11 @@
 import styles from './page.module.sass'
 import {useParams} from 'next/navigation';
 import UserInfo from '@/components/user/info'
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {UserData} from "@/const";
 import UserGallery from "@/components/user/gallery";
 import UserAwards from "@/components/user/awards";
+import BackButton from "@/components/elements/back";
 
 export default function UserIdPage() {
     const router = useParams();
@@ -27,6 +28,7 @@ export default function UserIdPage() {
         <div className={styles.user}>
             {foundUser && (
                 <div>
+                    <BackButton />
                     <div className={styles.user__info}>
                         <UserInfo user={foundUser}/>
                         <UserAwards awards={foundUser.awards}/>

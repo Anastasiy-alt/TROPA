@@ -22,6 +22,7 @@ export default function UserInfo({user}) {
                     <p className={styles.userinfo__type}>Город</p>
                     <p className={styles.userinfo__value}>{user.city}</p>
                 </div>
+                <p className={styles.userinfo__value}><i>"{user.quote}"</i></p>
                 <p className={styles.userinfo__travels}>{user.trips}</p>
             </div>
         </div>

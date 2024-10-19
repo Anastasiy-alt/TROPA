@@ -10,7 +10,7 @@ export default function Photo({data}) {
                 <img src={data.img} alt="" className={styles.photo__img}/>
                 <div className={styles['photo__tag-block']}>
                     {data.tags.map((data, key) => (
-                        <Tag title={data.title} key={key}/>
+                        <Tag data={data} key={key}/>
                     ))}
                 </div>
                 <div className={styles.photo__visible}>

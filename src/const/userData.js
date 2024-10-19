@@ -6,6 +6,7 @@ export const UserData = [
         trips: '7 поездок',
         city: 'Шерегеш',
         old: '21 год',
+        quote: 'А вдруг окажется, что смысл жизни — не есть сладкого и не спать до двенадцати? Я тогда только расстроюсь...',
         photos: [
             {
                 id: '58',
@@ -99,6 +100,7 @@ export const UserData = [
         trips: '4 поездки',
         city: 'Челябинск',
         old: '19',
+        quote: 'Можно всю жизнь прождать подходящий момент и в итоге так и не сказать друг другу что-то важное',
         photos: [
             {
                 id: '61',
@@ -207,6 +209,7 @@ export const UserData = [
         trips: '17 поездок',
         city: 'Томск',
         old: '26 лет',
+        quote: 'Да, иногда для принятия важного решения не хватает самой малости — хорошего пинка',
         photos: [
             {
                 id: '59',
@@ -354,6 +357,7 @@ export const UserData = [
         avatar: 'https://images.unsplash.com/photo-1629185753060-6036205bbc02?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         trips: '12 поездок',
         city: '25',
+        quote: 'А всё-таки, наверно, хорошо знать, что там, где горит свет, кто-то может сидеть и думать о тебе',
         old: 'Ханты-Мансийск',
         photos: [
             {

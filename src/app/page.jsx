@@ -14,7 +14,7 @@ import Arrow from '@/assets/icon/arrow.svg'
 
 export default function Home() {
     const swiperRef = useRef(null);
-const [regionCards, setRegionCards] = useState(6);
+    const [regionCards, setRegionCards] = useState(6);
     const handleNext = () => {
         if (swiperRef.current) {
             console.log(swiperRef)
@@ -48,7 +48,7 @@ const [regionCards, setRegionCards] = useState(6);
                         {
                             HashtagsData.map((tag, key) => (
                                 <SwiperSlide className={styles['swiper-tag__slide']} key={key}>
-                                    <Tag title={tag.title} main={true} />
+                                    <Tag data={tag} main={true}/>
                                 </SwiperSlide>
                             ))
                         }
@@ -68,10 +68,10 @@ const [regionCards, setRegionCards] = useState(6);
                     ))}
                 </div>
                 {regionCards < RegionDataCard.length &&
-                <Button
-                    onClick={handleMoreCards}
-                    text={'Ещё'}
-                />}
+                    <Button
+                        onClick={handleMoreCards}
+                        text={'Ещё'}
+                    />}
             </div>
         </div>
     );
