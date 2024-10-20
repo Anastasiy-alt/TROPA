@@ -5,6 +5,7 @@ import Like from '@/assets/icon/like.svg'
 import LikeDef from '@/assets/icon/like-def.svg'
 import Button from "@/components/elements/button";
 import Map from "@/components/photoDetail/map";
+import Tag from "@/components/elements/tag";
 
 export default function InfoDetailPhoto({image}) {
     const tags = ['алтай', 'горы', 'лес'];
@@ -28,33 +29,33 @@ export default function InfoDetailPhoto({image}) {
         }
     };
 
-    const calculateAndApplyStyle = () => {
-        if (windowWidth > 1364) {
-            const lineHeight = parseFloat(window.getComputedStyle(textContentRef.current).lineHeight);
-            const textContainerHeight = 70;
-            const textContainerLineCount = Math.round(textContainerHeight / lineHeight);
-            const actualLines = textContentRef.current.scrollHeight / lineHeight;
-
-            if (actualLines > textContainerLineCount - 1) {
-                textContentRef.current.style.maxHeight = `${lineHeight * (textContainerLineCount - 1)}px`;
-                setTimeout(() => {
-                    textContentRef.current.style.display = "-webkit-box";
-                    textContentRef.current.style.webkitBoxOrient = "vertical";
-                    textContentRef.current.style.overflow = "hidden";
-                    textContentRef.current.style.setProperty('-webkit-line-clamp', 3);
-                }, 350);
-            } else {
-                setShowButton(false);
-                textContentRef.current.style.maxHeight = `${textContentRef.current.scrollHeight}px`;
-            }
-        } else {
-            textContentRef.current.style.display = "flex";
-            textContentRef.current.style.maxHeight = "fit-content";
-            textContentRef.current.style.webkitBoxOrient = "vertical";
-            textContentRef.current.style.overflow = "visible";
-            textContentRef.current.style.setProperty('-webkit-line-clamp', 'auto');
-        }
-    };
+    // const calculateAndApplyStyle = () => {
+    //     if (windowWidth > 1364) {
+    //         const lineHeight = parseFloat(window.getComputedStyle(textContentRef.current).lineHeight);
+    //         const textContainerHeight = 70;
+    //         const textContainerLineCount = Math.round(textContainerHeight / lineHeight);
+    //         const actualLines = textContentRef.current.scrollHeight / lineHeight;
+    //
+    //         if (actualLines > textContainerLineCount - 1) {
+    //             textContentRef.current.style.maxHeight = `${lineHeight * (textContainerLineCount - 1)}px`;
+    //             setTimeout(() => {
+    //                 textContentRef.current.style.display = "-webkit-box";
+    //                 textContentRef.current.style.webkitBoxOrient = "vertical";
+    //                 textContentRef.current.style.overflow = "hidden";
+    //                 textContentRef.current.style.setProperty('-webkit-line-clamp', 3);
+    //             }, 350);
+    //         } else {
+    //             setShowButton(false);
+    //             textContentRef.current.style.maxHeight = `${textContentRef.current.scrollHeight}px`;
+    //         }
+    //     } else {
+    //         textContentRef.current.style.display = "flex";
+    //         textContentRef.current.style.maxHeight = "fit-content";
+    //         textContentRef.current.style.webkitBoxOrient = "vertical";
+    //         textContentRef.current.style.overflow = "visible";
+    //         textContentRef.current.style.setProperty('-webkit-line-clamp', 'auto');
+    //     }
+    // };
 
     const toggleLike = () => {
         setIsLiked(!isLiked);
@@ -64,10 +65,10 @@ export default function InfoDetailPhoto({image}) {
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
-            calculateAndApplyStyle();
+            // calculateAndApplyStyle();
         };
         window.addEventListener('resize', handleResize);
-        calculateAndApplyStyle();
+        // calculateAndApplyStyle();
         return () => window.removeEventListener('resize', handleResize);
     }, [windowWidth]);
 
@@ -91,26 +92,31 @@ export default function InfoDetailPhoto({image}) {
 
                 </div>
             </div>
+            <div className={styles.info__tags}>
+                {image.tags.map((tag, key) => (
+                    <Tag key={key} data={tag} />
+                ))}
+            </div>
+
             <div className={styles.info__blocks}>
-                <div className={`${styles.info__description} ${styles["info__description-anim"]}`}>
-                    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`}
-                       ref={textContentRef}>
-                        В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит
-                        посетить этот
-                        лес, вас точно съедят!
-                        В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит
-                        посетить этот
-                        лес, вас точно съедят!
-                    </p>
-                    {showButton && (
-                        <button className={styles["info__description-more"]}
-                                onClick={toggleText}>
-                            {moreText}
-                        </button>
-                    )}
+                {/*<div className={`${styles.info__description} ${styles["info__description-anim"]}`}>*/}
 
-
-                </div>
+                {/*    <p className={`${styles['info__description-text']} ${styles['info__description-text-anim']}`}*/}
+                {/*       ref={textContentRef}>*/}
+                {/*        В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит*/}
+                {/*        посетить этот*/}
+                {/*        лес, вас точно съедят!*/}
+                {/*        В этом медвежем лесу водятся красивые медведи: и белые, и черные, и черно-белые. Вобщем стоит*/}
+                {/*        посетить этот*/}
+                {/*        лес, вас точно съедят!*/}
+                {/*    </p>*/}
+                {/*    {showButton && (*/}
+                {/*        <button className={styles["info__description-more"]}*/}
+                {/*                onClick={toggleText}>*/}
+                {/*            {moreText}*/}
+                {/*        </button>*/}
+                {/*    )}*/}
+                {/*</div>*/}
 
                 <div className={styles.info__coordinates}>
                     <div className={styles["info__coordinates-value-block"]}>

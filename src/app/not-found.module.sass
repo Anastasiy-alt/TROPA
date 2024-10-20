@@ -1,0 +1,44 @@
+@import '../styles/color'
+@import '../styles/mixin'
+
+.err
+  display: flex
+  flex-direction: row
+  gap: 20px
+  align-items: center
+  margin: 200px 0 50px
+  justify-content: center
+
+.err__img
+  width: 220px
+  height: 390px
+  margin-top: -160px
+
+.err__link
+  text-decoration: none
+  margin-top: 20px
+
+.err__text-block
+  display: flex
+  flex-direction: column
+  width: 480px
+  text-align: center
+  align-items: center
+
+.err__text-green
+  @include font-styles(150px, 600, 180px)
+  color: $green
+  margin: 0
+  padding: 0
+
+.err__main-text
+  @include font-styles(30px, 600, 36px)
+  color: $black
+  margin: 0
+  padding: 0
+
+.err__subtitle-text
+  @include font-styles(25px, 400, 30px)
+  color: $black
+  margin: 10px 0
+  padding: 0
