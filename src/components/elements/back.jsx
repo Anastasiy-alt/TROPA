@@ -1,3 +1,4 @@
+"use client";
 import {useRouter} from 'next/navigation';
 import BackArrow from "@/assets/icon/back-arrow.svg";
 import React from "react";

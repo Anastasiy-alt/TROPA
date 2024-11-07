@@ -6,8 +6,9 @@ export async function generateStaticParams() {
     return ids.map(id => ({id}));
 }
 
-const PhotoID = (props) => {
-    return <PhotoClient />;
+const PhotoID = ({ params }) => {
+    const { id } = params;  // Деструктурируем id из params
+    return <PhotoClient id={id} />;  // Передаем id в PhotoClient
 }
 
 export default PhotoID;

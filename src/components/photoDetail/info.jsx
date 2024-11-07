@@ -1,4 +1,6 @@
+"use client";
 import styles from './info.module.sass'
+
 import React, {useState, useEffect} from 'react';
 import {useRef} from "react";
 import Like from '@/assets/icon/like.svg'
