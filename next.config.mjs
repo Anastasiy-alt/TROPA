@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    pageExtensions: ["js", "jsx", "mdx"],
-        output: "export",
+    pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
         webpack(config) {
             // Grab the existing rule that handles SVG imports
             const fileLoaderRule = config.module.rules.find((rule) =>
@@ -23,7 +22,6 @@ const nextConfig = {
                     resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
                     use: ['@svgr/webpack'],
                 },
-
             )
 
             // Modify the file loader rule to ignore *.svg, since we have it handled now.
@@ -31,5 +29,6 @@ const nextConfig = {
 
             return config
         },
+    output: "export",
 };
 export default nextConfig;
