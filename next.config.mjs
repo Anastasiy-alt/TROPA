@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    pageExtensions: ["js", "jsx", "mdx"],
         output: "export",
         webpack(config) {
             // Grab the existing rule that handles SVG imports
