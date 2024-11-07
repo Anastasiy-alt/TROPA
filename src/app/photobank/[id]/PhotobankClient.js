@@ -10,16 +10,15 @@ import Masonry from "react-responsive-masonry";
 import BackButton from "@/components/elements/back";
 
 const PhotobankClient = ({ photoCards, regionDataCard }) => {
-    const router = useParams();
-    const slug = router.id;
+    const { id } = useParams(); // Измените на деструктуризацию
     const [foundRegion, setFoundRegion] = useState(null);
     const [photoCount, setPhotoCount] = useState(10);
     const [photoArray, setPhotoArray] = useState([]);
     const [tags, setTags] = useState([]);
 
     useEffect(() => {
-        if (slug) {
-            const region = regionDataCard.find(region => region.slug === slug);
+        if (id) {
+            const region = regionDataCard.find(region => region.slug === id);
             setFoundRegion(region);
             const data = photoCards.filter(e => region.slug === e.regionId);
             setPhotoArray(data);
@@ -30,7 +29,7 @@ const PhotobankClient = ({ photoCards, regionDataCard }) => {
             const topTags = getTopTagsObjects(tagsArray, 5);
             setTags(topTags);
         }
-    }, [slug]);
+    }, [id]);
 
     const getTopTagsObjects = (tags, topCount) => {
         const tagCount = {};

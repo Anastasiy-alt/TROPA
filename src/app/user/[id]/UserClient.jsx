@@ -9,8 +9,7 @@ import UserAwards from "@/components/user/awards";
 import BackButton from "@/components/elements/back";
 
 export default function UserClient() {
-    const router = useParams();
-    const id = router.id;
+    const { id } = useParams();
     const [foundUser, setFoundUser] = useState(null);
     const findUser = (data) => {
         return data.UserData.find(region => region.id === data.id);
