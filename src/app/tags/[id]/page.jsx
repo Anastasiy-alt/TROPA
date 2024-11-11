@@ -60,7 +60,7 @@ import { PhotoCards, HashtagsData } from "@/const";
 import styles from "@/app/photobank/page.module.sass";
 import Photo from "@/components/cards/photo";
 import Button from "@/components/elements/button";
-import Masonry from "react-responsive-masonry";
+// import Masonry from "react-responsive-masonry";
 import BackButton from "@/components/elements/back";
 const TagPage = ({ photosArr, activeTag }) => {
     const [photoCount, setPhotoCount] = React.useState(10);
@@ -79,11 +79,11 @@ const TagPage = ({ photosArr, activeTag }) => {
                         </h2>
                     </div>
                     <div className={styles.stock__photos}>
-                        <Masonry columnsCount={3} gutter={"30px"}>
+                        {/*<Masonry columnsCount={3} gutter={"30px"}>*/}
                             {photosArr.slice(0, photoCount).map((photo) => (
                                 <Photo key={`keyPhoto${photo.id}`} data={photo} />
                             ))}
-                        </Masonry>
+                        {/*</Masonry>*/}
                     </div>
                     {photoCount < photosArr.length && (
                         <Button

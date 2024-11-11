@@ -1,3 +1,4 @@
+"use client";
 import styles from './map.module.sass';
 import Map from '@/assets/icon/map.svg'
 import {useRef, useEffect} from "react";
