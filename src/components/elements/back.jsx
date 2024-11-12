@@ -24,7 +24,7 @@ import BackArrow from "@/assets/icon/back-arrow.svg";
 export default function BackButton() {
     return (
         <button
-            onClick={() => window.history.back()} // Используем window.history для навигации
+            // onClick={() => window.history.back()} // Используем window.history для навигации
             className='stock__back-button'
             type="button"
             aria-label="Назад"

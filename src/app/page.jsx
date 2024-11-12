@@ -17,7 +17,6 @@ export default function Home() {
     const [regionCards, setRegionCards] = useState(6);
     const handleNext = () => {
         if (swiperRef.current) {
-            console.log(swiperRef)
             swiperRef.current.swiper.slideNext();
         }
     };

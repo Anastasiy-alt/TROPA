@@ -49,31 +49,20 @@
 //         </div>
 //     )
 // }
+
 import styles from './page.module.sass';
 import { PhotoCards } from "@/const";
 import InfoDetailPhoto from '@/components/photoDetail/info';
 import SliderDetailPhoto from '@/components/photoDetail/slider';
 import BackButton from "@/components/elements/back";
 
-const PhotoId = ({ foundPhoto }) => {
-    const imgRef = React.useRef(null);
-    const [isVertical, setIsVertical] = React.useState(null);
-
-    const handleImageLoad = () => {
-        if (imgRef.current) {
-            const { naturalWidth, naturalHeight } = imgRef.current;
-            setIsVertical(naturalWidth < naturalHeight);
-        }
-    };
-
+const PhotoId = ({ foundPhoto, isVertical }) => {
     return (
         <div className='stock'>
             <BackButton />
             {foundPhoto && (
                 <div className={`${styles["main-info"]} ${!isVertical ? styles["main-info_horizontal"] : ''}`}>
                     <img
-                        ref={imgRef}
-                        onLoad={handleImageLoad}
                         src={foundPhoto.img}
                         alt="" className={styles["main-info__img"]}/>
                     {/*<InfoDetailPhoto image={foundPhoto} />*/}
@@ -106,5 +95,9 @@ export default async function Page({ params }) {
         };
     }
 
-    return <PhotoId foundPhoto={foundPhoto} />;
+    // Предположим, что мы знаем ширину и высоту изображения заранее
+    const { naturalWidth, naturalHeight } = foundPhoto; // Замените на фактические размеры изображения
+    const isVertical = naturalWidth < naturalHeight;
+
+    return <PhotoId foundPhoto={foundPhoto} isVertical={isVertical} />;
 }

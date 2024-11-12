@@ -32,7 +32,6 @@ import HeaderLk from '@/components/header/Lk';
 
 export default function Header({ params }) {
     const currentPath = `/${params}`;
-    console.log(params, 'b')
     return (
         <header className={`${styles.header} ${currentPath === '/' ? styles['main-page'] : ''}`}>
             <div className={styles.icons}>
@@ -59,7 +58,6 @@ export default function Header({ params }) {
 
 export async function getServerSideProps(context) {
     const { slug } = context.params;
-    console.log(context, 't')
     return {
         props: {
             currentPath: `/${slug}`, // Передаем текущий путь

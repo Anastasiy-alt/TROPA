@@ -91,19 +91,17 @@
 //     );
 // }
 
-// app/photobank/[id]/page.js
 import { PhotoCards, RegionDataCard } from "@/const";
 import styles from "@/app/photobank/page.module.sass";
 import Tag from "@/components/elements/tag";
 import Photo from "@/components/cards/photo";
 import Button from "@/components/elements/button";
-// import Masonry from "react-responsive-masonry";
 import BackButton from "@/components/elements/back";
-const PhotobankID = ({ foundRegion, photoArray, tags }) => {
-    const [photoCount, setPhotoCount] = React.useState(10);
+
+const PhotobankID = ({ foundRegion, photoArray, tags, photoCount }) => {
     const handleMoreCards = () => {
-        setPhotoCount(photoCount + 10);
-    };
+        console.log('here')
+    }
     return (
         <div>
             {foundRegion && (
@@ -123,16 +121,15 @@ const PhotobankID = ({ foundRegion, photoArray, tags }) => {
                         )}
                     </div>
                     <div className={styles.stock__photos}>
-                        {/*<Masonry columnsCount={3} gutter={"30px"}>*/}
-                            {photoArray.slice(0, photoCount).map((photo) => (
-                                <Photo key={`keyPhoto${photo.id}`} data={photo} />
-                            ))}
-                        {/*</Masonry>*/}
+                        {photoArray.map((photo) => (
+                            <Photo key={`keyPhoto${photo.id}`} data={photo} />
+                        ))}
                     </div>
                     {photoCount < photoArray.length && (
                         <Button
-                            onClick={handleMoreCards}
+                            // onClick={handleMoreCards}
                             text={'Ещё'}
+                            disabled // Кнопка отключена на сервере
                         />
                     )}
                 </div>
@@ -140,6 +137,7 @@ const PhotobankID = ({ foundRegion, photoArray, tags }) => {
         </div>
     );
 };
+
 const getTopTagsObjects = (tags, topCount) => {
     const tagCount = {};
     tags.forEach(tag => {
@@ -150,12 +148,14 @@ const getTopTagsObjects = (tags, topCount) => {
         .slice(0, topCount)
         .map(([title]) => tags.find(tag => tag.title === title));
 };
+
 export async function generateStaticParams() {
     const paths = RegionDataCard.map(region => ({
         id: region.slug
     }));
     return paths;
 }
+
 export async function getData(slug) {
     const foundRegion = RegionDataCard.find(region => region.slug === slug);
     const photoArray = PhotoCards.filter(e => foundRegion.slug === e.regionId);
@@ -166,9 +166,20 @@ export async function getData(slug) {
     const topTags = getTopTagsObjects(tagsArray, 5);
     return { foundRegion, photoArray, topTags };
 }
+
 export default async function Page({ params }) {
     const { id } = params;
     const { foundRegion, photoArray, topTags } = await getData(id);
 
-    return <PhotobankID foundRegion={foundRegion} photoArray={photoArray} tags={topTags} />;
+    // Определяем, сколько фотографий отображать на странице
+    const initialPhotoCount = 100; // Первоначальное количество фотографий для отображения
+
+    return (
+        <PhotobankID
+            foundRegion={foundRegion}
+            photoArray={photoArray}
+            tags={topTags}
+            photoCount={initialPhotoCount} // Передаем начальное количество фотографий
+        />
+    );
 }

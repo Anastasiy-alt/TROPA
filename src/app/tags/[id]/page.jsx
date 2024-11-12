@@ -63,10 +63,10 @@ import Button from "@/components/elements/button";
 // import Masonry from "react-responsive-masonry";
 import BackButton from "@/components/elements/back";
 const TagPage = ({ photosArr, activeTag }) => {
-    const [photoCount, setPhotoCount] = React.useState(10);
-
+    // const [photoCount, setPhotoCount] = React.useState(10);
+const photoCount = 100
     const handleMoreCards = () => {
-        setPhotoCount(photoCount + 10);
+        // setPhotoCount(photoCount + 10);
     };
     return (
         <div>
@@ -80,7 +80,7 @@ const TagPage = ({ photosArr, activeTag }) => {
                     </div>
                     <div className={styles.stock__photos}>
                         {/*<Masonry columnsCount={3} gutter={"30px"}>*/}
-                            {photosArr.slice(0, photoCount).map((photo) => (
+                            {photosArr.map((photo) => (
                                 <Photo key={`keyPhoto${photo.id}`} data={photo} />
                             ))}
                         {/*</Masonry>*/}
