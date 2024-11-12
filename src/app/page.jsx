@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {useRef} from "react";
 import {RegionDataCard, HashtagsData} from "@/const";
-import styles from "./page.module.sass";
+import styles from "@/app/page.module.sass";
 import CardsRegion from "@/components/cards/region";
 import MainBanner from "@/components/main/banner";
 import Search from "@/components/elements/search";
